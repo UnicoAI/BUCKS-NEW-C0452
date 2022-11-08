@@ -2,13 +2,35 @@
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+/**
+ 
+ * @author     Marius Daniel Boncica Student Bucks New ID: 22045429
+ * @version    0.1 (2022.10.29)
+ * 
+ * Modified by Marius Boncica 01/11/2022
 
+ */
 public class Album {  //declare album attributes
     private ArrayList<Song> songs;
 
     public Album(String title) { //album constructor
         this.songs = new ArrayList<Song>();
+
     }
+    public void addSong(Song song)
+    {
+      songs.add(song);
+    }
+  
+    /**
+    Method to delete a song from the database album
+    @return void
+    */
+    public void deleteSong(int id)
+    {
+      songs.remove(id);
+    }
+  
    
 //method to find a song in the arraylist
     public Song findSong(String title){
@@ -57,6 +79,7 @@ public class Album {  //declare album attributes
      System.out.println(title + "there is no such song in album");
         return false;
     }
-    
+   
+  
    
 }
