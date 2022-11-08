@@ -1,6 +1,14 @@
 
+/**
+ 
+ * @author     Marius Daniel Boncica Student Bucks New ID: 22045429
+ * @version    0.1 (2022.10.29)
+ * 
+ * Modified by Marius Boncica 01/11/2022
 
+ */
 public class Song { //create class song, declare attribute private
+    
     private String title;
     private String artist;
     private double playcount;
@@ -30,11 +38,13 @@ public class Song { //create class song, declare attribute private
         return playcount;
     }
     //override tostring method to print values of objects instead of allocated storage memory index
-    @Override
+    @Override //make a style to display song details
     public String toString() {
-        return "{" +
-                " Title:  '" + title + '\'' + 
-                ",  Artist Name:  '  " + artist  +"  Play Count:  '  " + playcount +
-                '}';
+        return "===================================================================================\n" +
+        "|| "  +
+                " |Title: " +"||"+ title + "||"+ 
+                " |Artist Name:  " + "||"+artist  + "||" + " |Play Count: " + " ||"+playcount +"||" +
+                " ||  \n"+ "===================================================================================";
+                
     }
 }
